@@ -9,7 +9,7 @@ export default class myDocument extends Document {
         </Head>
 
         <body>
-          <main/>
+          <Main/>
           <NextScript/>
         </body>
       </Html>
