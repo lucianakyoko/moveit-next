@@ -58,6 +58,22 @@
   transition: background-color 0.2s;
 }
 
-.CountdounButton:hover {
+.CountdounButton:not(:disabled):hover {
   background: var(--blue-dark);
+}
+
+.CountdounButtonActive {
+  background: var(--white);
+  color: var(--title);
+}
+
+.CountdounButtonActive:not(:disabled):hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.CountdounButton:disabled {
+  background: var(--white);
+  color: var(--text);
+  cursor: not-allowed;
 }
